@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0f1626;
+    color: #e8ecf4;
+}
+
+.card {
+    width: 100%;
+    max-width: 440px;
+    padding: 28px;
+    border-radius: 16px;
+    background: #18233a;
+    border: 1px solid #27365a;
+}
+
+.title {
+    margin: 0 0 4px;
+    font-size: 24px;
+}
+
+.subtitle {
+    margin: 0 0 24px;
+    font-size: 14px;
+    color: #8c9bbd;
+}
+
+.label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #8c9bbd;
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #e8ecf4;
+    background: #0f1626;
+    border: 1px solid #27365a;
+    border-radius: 10px;
+}
+
+.input:focus,
+.select:focus {
+    outline: none;
+    border-color: #4f8cff;
+}
+
+.row {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.field {
+    flex: 1;
+    min-width: 0;
+}
+
+.swap {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: #e8ecf4;
+    background: #27365a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.swap:hover {
+    background: #34477a;
+}
+
+.result {
+    margin-top: 24px;
+    padding: 18px;
+    border-radius: 12px;
+    background: #0f1626;
+}
+
+.result-main {
+    font-size: 26px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.result-rate {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #8c9bbd;
+}
+
+.error {
+    margin-top: 24px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #ffb4b4;
+    background: #3a1c24;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #8c9bbd;
+}
+
+.badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ffd27a;
+    background: #3d3118;
+}
+
+.update {
+    flex-shrink: 0;
+    padding: 9px 14px;
+    font-size: 13px;
+    color: #ffffff;
+    background: #4f8cff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.update:hover {
+    background: #3d77e6;
+}
+
+.update:disabled {
+    background: #27365a;
+    color: #8c9bbd;
+    cursor: default;
+}
